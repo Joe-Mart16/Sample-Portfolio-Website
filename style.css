@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: bisque;
+}
+
+header {
+  height: 2rem;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  flex: 1;
+  font-size: small;
+}
+
+h2 {
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem;
+  color: rgba(35, 38, 249, 0.997);
+}
+
+nav {
+  flex: 2;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  margin: 0;
+  padding: 1em;
+}
+
+ul li {
+  margin: 0 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: small;
+  font-weight: bolder;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: rgba(35, 38, 249, 0.997);
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#about p {
+  width: 30rem;
+  text-align: left;
+  color: rgba(35, 38, 249, 0.997);
+  font-weight: bold;
+}
+
+#projects .grid-div {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-div img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.colab {
+  font-size: x-large;
+  text-align: center;
+  font-weight: bolder;
+}
+
+hr {
+  color: rgba(242, 246, 250, 0.979);
+  font-weight: lighter;
+}
+
+footer {
+  background-color: darkgray;
+  color: rgba(35, 38, 249, 0.997);
+  text-align: center;
+  letter-spacing: 0.2rem;
+  font-size: larger;
+  font-weight: normal;
+  height: 1.5rem;
+}
+
